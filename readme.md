@@ -7,4 +7,5 @@
   - Kaip sekasi su anglų kalba
 - Įvadas į kursą
 - Įrankio "Visual Studio Code atsisiuntimas"
--
+- Susipažinimas su Visual Studio Code
+- Susipažinimas su HTML kalba, kas tai?
