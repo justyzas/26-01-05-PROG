@@ -1,2 +1,14 @@
+- **Boilerplate** –  
+  Paruoštas pradinis projekto šablonas arba kodas, kuris naudojamas kaip atspirties taškas kuriant naują projektą. Jame dažniausiai būna pagrindinė failų struktūra ir minimalus, bet veikiantis kodas, kad nereikėtų visko pradėti nuo nulio.
+
+- **Editorius** –  
+  Programa, skirta kodo rašymui ir redagavimui. Populiarūs pavyzdžiai: _Visual Studio Code_, _WebStorm_. Kodo editoriai dažnai turi papildomas funkcijas, tokias kaip spalvinimas, klaidų rodymas ir automatiniai pasiūlymai.
+
 - **HTML (HyperText Markup Language)** –  
   Žymėjimo kalba, naudojama interneto svetainių struktūrai aprašyti. HTML nurodo, koks turinys yra puslapyje: tekstas, antraštės, paveikslėliai, nuorodos ir kt.
+
+- **HTML Tag** –  
+  HTML žyma, naudojama turiniui apibrėžti. Ji rašoma tarp `< >` simbolių ir nurodo, kokio tipo elementas yra naudojamas, pavyzdžiui: `<p>`, `<h1>`, `<img>`.
+
+  - **HTML Tag atributai** –  
+    Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
