@@ -1,6 +1,8 @@
 - **Boilerplate** –  
   Paruoštas pradinis projekto šablonas arba kodas, kuris naudojamas kaip atspirties taškas kuriant naują projektą. Jame dažniausiai būna pagrindinė failų struktūra ir minimalus, bet veikiantis kodas, kad nereikėtų visko pradėti nuo nulio.
 
+- **Development server** –  
+  Vietinis serveris, naudojamas svetainių ar aplikacijų kūrimui ir testavimui. Jis leidžia matyti pakeitimus naršyklėje realiu laiku ir imituoja, kaip svetainė veiks tikrame serveryje.
 - **Editorius** –  
   Programa, skirta kodo rašymui ir redagavimui. Populiarūs pavyzdžiai: _Visual Studio Code_, _WebStorm_. Kodo editoriai dažnai turi papildomas funkcijas, tokias kaip spalvinimas, klaidų rodymas ir automatiniai pasiūlymai.
 
