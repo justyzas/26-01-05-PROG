@@ -3,6 +3,7 @@
 
 - **Development server** –  
   Vietinis serveris, naudojamas svetainių ar aplikacijų kūrimui ir testavimui. Jis leidžia matyti pakeitimus naršyklėje realiu laiku ir imituoja, kaip svetainė veiks tikrame serveryje.
+
 - **Editorius** –  
   Programa, skirta kodo rašymui ir redagavimui. Populiarūs pavyzdžiai: _Visual Studio Code_, _WebStorm_. Kodo editoriai dažnai turi papildomas funkcijas, tokias kaip spalvinimas, klaidų rodymas ir automatiniai pasiūlymai.
 
@@ -12,5 +13,5 @@
 - **HTML Tag** –  
   HTML žyma, naudojama turiniui apibrėžti. Ji rašoma tarp `< >` simbolių ir nurodo, kokio tipo elementas yra naudojamas, pavyzdžiui: `<p>`, `<h1>`, `<img>`.
 
-  - **HTML Tag atributai** –  
-    Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
+- **HTML Tag atributai** –  
+  Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
