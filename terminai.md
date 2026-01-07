@@ -1,6 +1,12 @@
 - **Boilerplate** –  
   Paruoštas pradinis projekto šablonas arba kodas, kuris naudojamas kaip atspirties taškas kuriant naują projektą. Jame dažniausiai būna pagrindinė failų struktūra ir minimalus, bet veikiantis kodas, kad nereikėtų visko pradėti nuo nulio.
 
+- **CSS (Cascading Style Sheets)** –  
+  Stilių aprašymo kalba, naudojama HTML dokumentų išvaizdai formuoti. CSS leidžia nustatyti spalvas, šriftus, dydžius, išdėstymą ir bendrą svetainės dizainą, atskiriant turinį nuo jo pateikimo.
+
+- **CSS Selector** –  
+  CSS dalis, kuri nurodo, kuriems HTML elementams bus taikomi stiliai. Selektoriai gali pasirinkti elementus pagal jų tipą, klasę, identifikatorių ar kitus požymius.
+
 - **Development server** –  
   Vietinis serveris, naudojamas svetainių ar aplikacijų kūrimui ir testavimui. Jis leidžia matyti pakeitimus naršyklėje realiu laiku ir imituoja, kaip svetainė veiks tikrame serveryje.
 
@@ -16,4 +22,11 @@
 - **HTML Tag atributai** –  
   Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
 
-- **UI (User Interface)** - the point where humans interact with machines, software, or devices, encompassing everything users see, hear, and touch (like buttons, icons, screens, sounds, keyboards) to give commands and receive information, with the goal of making interactions intuitive, efficient, and user-friendly
+- **Serveris** –  
+  Kompiuteris arba programa, kuri saugo svetainės failus ir pateikia juos vartotojams per internetą. Kai naršyklė paprašo puslapio, serveris atsiunčia HTML, CSS, JavaScript ir kitus reikalingus duomenis.
+
+- **UI (User Interface)** –  
+  Vartotojo sąsaja – tai viskas, ką vartotojas mato ir naudoja sąveikaudamas su svetaine ar aplikacija. Tai mygtukai, tekstai, formos, spalvos ir bendras išdėstymas.
+
+- **UI Element** –  
+  Atskirta vartotojo sąsajos dalis, skirta tam tikrai funkcijai atlikti. Pavyzdžiai: mygtukas, įvesties laukas, meniu, nuoroda, kortelė.

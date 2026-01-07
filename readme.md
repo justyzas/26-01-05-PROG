@@ -22,6 +22,7 @@
   - Tables
   - Styling (CSS)
 - CSS [MDN Šaltinis](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- CSS [W3Schools](https://www.w3schools.com/html/html_favicon.asp)
 - Šaltiniai kur galima išmokti/sužinoti apie CSS
 - Serverio veikimas (failų pateikinėjimas iš serverio)
-- Fialų pateikinėjimas reliatyviai nuo dabartinio HTML failo
+- Failų pateikinėjimas reliatyviai nuo dabartinio HTML failo
