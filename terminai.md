@@ -15,3 +15,5 @@
 
 - **HTML Tag atributai** –  
   Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
+
+- **UI (User Interface)** - the point where humans interact with machines, software, or devices, encompassing everything users see, hear, and touch (like buttons, icons, screens, sounds, keyboards) to give commands and receive information, with the goal of making interactions intuitive, efficient, and user-friendly

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<title>Justino Puslapis - Pagrindinis meniu</title>
+		<!-- Style tag'e apsirašo CSS (Cascading Style Sheetes) -->
+		<style>
+			/* Selektorius {
+			             STILIAI
+			         } */
+			table.su-krastinemis,
+			td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			/* Klasės selektorius pradžioje pre-fixinamas su . (taško) simboliu */
+			.small-text {
+				font-size: 8px;
+				color: red;
+			}
+			.nav li a {
+				color: green;
+				background-color: lightgray;
+				padding: 5px;
+				margin-bottom: 10px;
+				border-radius: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>NAVIGACIJA</h3>
+		<hr />
+		<ul class="nav">
+			<li>
+				<a href="../html/simple-tags.html">Simple tags</a>
+			</li>
+			<li>
+				<a href="./advanced-tags.html">Advanced tags</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=Vnblc4jfJHU"
+					>Youtube chess video</a
+				>
+			</li>
+		</ul>
+		<hr />
+		<h1>Advanced HTML Tags</h1>
+		<hr />
+		<h3>Sąrašai</h3>
+		<!-- Unordered List -->
+		<ul>
+			<li>Pienas</li>
+			<li class="small-text">Alaus</li>
+			<li>Duona</li>
+			<li class="small-text">3x Svogūnai</li>
+		</ul>
+
+		<!-- Ordered List -->
+		<ol
+			start="50"
+			type="I"
+		>
+			<li>Pirmas punktas</li>
+			<li>Antras punktas</li>
+			<li>Trečias punktas</li>
+		</ol>
+
+		<hr />
+
+		<!-- Lentelės -->
+		<table class="su-krastinemis">
+			<!-- Table RoW -->
+			<tr>
+				<!-- rowspan atributas nustato perr kiek eilučių eina lentelės duomuo -->
+				<!-- th - Table Header -->
+				<th colspan="2">Header 1</th>
+				<th>Header 2</th>
+				<th>Header 3</th>
+				<th>Header 4</th>
+			</tr>
+			<tr>
+				<!-- Table data -->
+				<!-- colspan atributas nurodo per kiek stulpelių eina lentelės duomuo -->
+
+				<td colspan="2">2st1</td>
+				<td>2st3</td>
+
+				<td>2st4</td>
+			</tr>
+			<tr>
+				<!-- Table data -->
+				<td>3st1</td>
+				<td>3st2</td>
+				<td>3st3</td>
+				<td>3st4</td>
+			</tr>
+			<tr>
+				<!-- Table data -->
+				<td>4st1</td>
+				<td>4st2</td>
+				<td>4st3</td>
+				<td>4st4</td>
+			</tr>
+		</table>
+
+		<hr />
+
+		<h3>Images</h3>
+
+		<img
+			src="https://blog.qasource.com/hs-fs/hubfs/a-complete-guide-to-user-interface-testing.png?width=640&height=430&name=a-complete-guide-to-user-interface-testing.png"
+			alt="Placeholder Image"
+		/>
+		<img
+			src="/Resources/images/multi-level-table.jpg"
+			alt="Lentelės pavyzdys"
+		/>
+		<img
+			src="../../Resources/images/multi-level-table.jpg"
+			alt="Lentelės pavyzdys"
+		/>
+		<hr />
+
+		<button>mygtukas</button>
+
+		<hr />
+
+		<audio
+			src="https://file-examples.com/storage/feb061f227695e9729ecea0/2017/11/file_example_MP3_700KB.mp3"
+			controls
+		></audio>
+
+		<hr />
+
+		<!-- Nukopijuotas iframe iš youtube platformos kad pateikti video -->
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/Vnblc4jfJHU?si=hwNPzPWxINRNHCbb"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+	</body>
+</html>
