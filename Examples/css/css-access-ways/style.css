@@ -1,0 +1,25 @@
+.green {
+	color: green;
+}
+/* Labai abstraktus selektorius */
+
+h4 {
+	color: magenta;
+}
+
+/* Identifikatoriaus selektorius */
+#pagrindinis-title {
+	font-size: 26px;
+}
+
+/* Nested selector + nth-child selector */
+.stylized-list li:nth-child(-n + 3) {
+	background-color: antiquewhite;
+}
+
+.bg-dark {
+	background-color: rgb(80, 80, 80);
+}
+.text-white {
+	color: white;
+}

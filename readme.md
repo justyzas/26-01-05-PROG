@@ -20,10 +20,10 @@
 - Advanced HTML Tags
   - Lists
   - Tables
-  - Styling (CSS)
+  - Styling (CSS) - Kalba, kuri gali pritaikyti HTML elementams stilių
 - CSS dokumentacijos [MDN Šaltinis](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - CSS dokumentacijos [W3Schools](https://www.w3schools.com/html/html_favicon.asp)
-- UI elementų apibrėžimas/supratimas
+- UI elementų apibrėžimas/supratimas. GUI - Graphical user interface
 - Audio/Video pridėjimas į puslapį;
 - Serverio veikimas (failų pateikinėjimas iš serverio)
 - Failų pateikinėjimas reliatyviai nuo dabartinio HTML failo
@@ -32,7 +32,9 @@
 
 - Praktinio darbo apžvalga
 - Praėjusios paskaitos medžiagos pakartojimas
+- Frontend vs. Backend;
 - HTML navigavimas tarp puslapių
+- Index.html failo reikšmę.
 - Dažniausiai naudojamos CSS savybės, jų pristatymas
 - Teksto lygiavimas
 - Elementų pozicionavimas
