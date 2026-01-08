@@ -23,6 +23,16 @@
   - Styling (CSS)
 - CSS dokumentacijos [MDN Šaltinis](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - CSS dokumentacijos [W3Schools](https://www.w3schools.com/html/html_favicon.asp)
+- UI elementų apibrėžimas/supratimas
 - Audio/Video pridėjimas į puslapį;
 - Serverio veikimas (failų pateikinėjimas iš serverio)
 - Failų pateikinėjimas reliatyviai nuo dabartinio HTML failo
+
+## Paskaita 3 _(2026-01-08)_
+
+- Praktinio darbo apžvalga
+- Praėjusios paskaitos medžiagos pakartojimas
+- HTML navigavimas tarp puslapių
+- Dažniausiai naudojamos CSS savybės, jų pristatymas
+- Teksto lygiavimas
+- Elementų pozicionavimas
