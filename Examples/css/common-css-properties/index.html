@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.text-center {
+				text-align: center;
+			}
+			.wide-element {
+				/* Minimalus plotis */
+				min-width: 200px;
+				/* Maksimalus plotis */
+				max-width: 400px;
+
+				background-color: lime;
+				color: white;
+			}
+			.image-container {
+				min-width: 300px;
+				max-width: 800px;
+			}
+			.image-container img {
+				width: 100%;
+			}
+
+			.text-sm {
+				font-size: 12px;
+			}
+			.text-md {
+				font-size: 16px;
+			}
+			.text-lg {
+				font-size: 20px;
+			}
+
+			.text-bold {
+				font-weight: bold;
+			}
+			.text-italic {
+				font-style: italic;
+			}
+			.text-underline {
+				text-decoration: underline;
+			}
+
+			.font-courier {
+				/* Gali būti priskirtas vienas šriftas, tačiau kartu nurodomi atsarginiai. Pats pagrindinis šriftas - kairiausias */
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.box {
+				width: 100px;
+				height: 100px;
+				/* border-bottom: 1px solid black;
+				border-top: 1px solid black; */
+				border: 2px dotted red;
+
+				/* border-color: red;
+				border-style: dotted;
+				border-width: 2px; */
+			}
+
+			.bg-green {
+				background-color: green;
+			}
+			.bg-orange {
+				background-color: rgb(224, 189, 123);
+			}
+			.text-blue {
+				color: blue;
+			}
+
+			/* Paraštės (išorinės) */
+			.margin-example {
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			/* Vidinės paraštės */
+			.padding-example {
+				padding-left: 20px;
+				padding-top: 20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+			}
+			.my-btn {
+				background-color: rgb(0, 63, 110);
+				padding: 5px 20px;
+				color: white;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			.navbar {
+				/* Išdėsto elementus į eilutę ir atrakina tam tikrą pozicionavimo elgesį */
+				display: flex;
+
+				/* justify-content Išdėsto vaikus horizontaliai */
+				/* Galima naudoti štai tokias savybes:
+				center, left, start, right, end, space-between, space-around	
+				*/
+				justify-content: space-between;
+				/* align-items Išdėsto vaikus vertikaliai */
+				/* align-items: center; */
+				background-color: rgb(0, 63, 110);
+				color: white;
+				padding: 10px;
+
+				/* height: 100px; */
+			}
+			.navbar a {
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Inline and block elements -->
+		<!-- Blokiniai elementai užima pilną ekrano plotį -->
+		<div>Blokinis elementas</div>
+		<div>Blokinis elementas</div>
+
+		<!-- Inline elementai užima tik reikiamą plotį -->
+		<i>Lorem ipsum dolor sit amet consectetur</i>
+		<i>Inline elementas</i>
+
+		<h3 class="text-center">My cool title!</h3>
+		<b class="text-center wide-element">Inline elementas</b>
+
+		<div class="wide-element">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero
+			voluptatem eveniet! Magni voluptate quae omnis tempore commodi sapiente?
+			Aspernatur laudantium et consectetur dicta. Nihil adipisci fugiat qui quam
+			minima!
+		</div>
+		<div>tekstas</div>
+		<div class="image-container">
+			<img
+				src="/Resources/images/multi-level-table.jpg"
+				alt="Lentelės pavyzdys"
+			/>
+		</div>
+		<!-- Šrifto dydžio keitimas -->
+		<p class="text-sm">Lorem ipsum dolor sit amet.</p>
+		<p class="text-md">Lorem ipsum dolor sit amet.</p>
+		<p class="text-lg">Lorem ipsum dolor sit amet.</p>
+		<!-- Šrifto stiliaus keitimas -->
+		<p class="text-bold">Lorem ipsum dolor sit amet.</p>
+		<p class="text-italic">Lorem ipsum dolor sit amet.</p>
+		<p class="text-underline">Lorem ipsum dolor sit amet.</p>
+
+		<!-- Šrifto šeimos priskyrimas -->
+		<p class="font-courier">Lorem ipsum dolor sit amet.</p>
+
+		<div class="bg-green text-blue">test</div>
+		<div class="bg-orange text-blue margin-example padding-example">test</div>
+		<div class="bg-green text-blue">test</div>
+		<hr />
+		<button class="my-btn">My Button</button>
+		<hr />
+
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#">Gallery</a>
+		</nav>
+
+		<div class="box bg-orange"></div>
+	</body>
+</html>
