@@ -38,3 +38,15 @@
 - Dažniausiai naudojamos CSS savybės, jų pristatymas
 - Teksto lygiavimas
 - Elementų pozicionavimas
+
+## Paskaita 4 _(2026-01-12)_
+
+- Praėjusios paskaitos medžiagos pakartojimas
+- CSS Flex, papildomos savybės
+- Puslapio išsirinkimas, jo apžvalga. Pasirinkome [EkoMart](https://html.themewant.com/ekomart/) - Ekomart - eCommerce HTML Template
+- Puslapiams įprastas turinio pateikimas: container
+- Puslapio elementų [semantika](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- CSS klasių įvardinimo rekomendacijos
+- Color picker extension
+- Puslapių kūrimo praktika
+- Puslapio analizė naudojant developer tools (F12/inspect element/apžiūrėti elementą)
