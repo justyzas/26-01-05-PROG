@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	font-family: Barlow, sans-serif;
+	font-size: 16px;
+}
+.container {
+	max-width: 1200px;
+
+	/* Pritaiko automatinę paraštę, kuri turinį išcentruoja kai yra didesnis ekranas nei 1200px */
+	margin: 0 auto;
+}
+
+.bg-light-green {
+	/* RedGreenBlue - spalvų kodo formatas */
+	background-color: rgb(97, 157, 36);
+}
+
+.text-nostyle {
+	text-decoration: none;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+.text-md {
+	font-size: 16px;
+}
+
+.text-lg {
+	font-size: 20px;
+}
+
+.text-xl {
+	font-size: 24px;
+}
+
+.py-1 {
+	padding: 10px 0;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.left-border-only {
+	border-left: 1px solid rgb(231, 230, 230);
+}
+
+.horizontal-borders-only {
+	border-left: 1px solid rgb(231, 230, 230);
+	border-right: 1px solid rgb(231, 230, 230);
+}
+
+.nav-links {
+	display: flex;
+	gap: 12px;
+	min-height: 45px;
+	/* justify-content: ; */
+	align-items: center;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.nav-button {
+	padding: 15px 0;
+}
+
+.nav-button.wider {
+	padding: 15px;
+}
+
+.text-dark {
+	color: #74787c;
+}
+
+.centered-vertically {
+	display: flex;
+	align-items: center;
+}
+
+.pl-2 {
+	padding-left: 20px;
+}
