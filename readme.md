@@ -50,3 +50,11 @@
 - Color picker extension
 - Puslapių kūrimo praktika
 - Puslapio analizė naudojant developer tools (F12/inspect element/apžiūrėti elementą)
+
+## Paskaita 5 _(2026-01-14)_
+
+- Praėjusios paskaitos aptarimas;
+- Pozicionavimui skirtas CSS - [MDN tutorial - positions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position);
+- Kitos CSS savybės;
+- Dropdown pavyzdys;
+- Puslapių kūrimo praktika;

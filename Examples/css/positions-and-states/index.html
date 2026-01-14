@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+
+		<style>
+			body {
+				margin: 0;
+			}
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				border: 1px solid red;
+			}
+			.box:hover {
+				background-color: blue;
+				color: white;
+				border-radius: 5px;
+			}
+
+			.fixed {
+				position: fixed;
+
+				/* top, bottom, left, right */
+				right: 10px;
+				bottom: 10px;
+			}
+
+			.relative {
+				/* Relative palieka rezervuotą vietą */
+				position: relative;
+
+				top: 10px;
+				left: 13px;
+				/* Prioritetas, kurį atvaizduoti priekyje, lyginant su kitais elementais. Didesnis z-index = didesnis prioritetas */
+				z-index: -1;
+			}
+
+			/* Atskaitos taškas absoliučiam elementui */
+			.absolute-container {
+				/* absoliučią poziciją turintis elementas privalo turėti kurį nors parentą su relative pozicija */
+				position: relative;
+				height: 250px;
+				background-color: antiquewhite;
+			}
+
+			.absolute {
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+			}
+			nav {
+				display: flex;
+				justify-content: space-between;
+				background-color: aquamarine;
+				padding: 15px 20px;
+			}
+
+			/* būsenos selektorius - kai pelytės žymeklis užvedamas ant target elemento */
+			nav:hover {
+				background-color: aqua;
+				/* Nurodo kad pelytės žymeklis pakeistų savo būseną */
+				cursor: pointer;
+			}
+
+			.sticky {
+				position: sticky;
+				top: 20px;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- FIXED -->
+		<div class="box fixed">FIXED</div>
+		<div>Lorem ipsum dolor sit amet.</div>
+		<!-- Relative position - Įprasta padėtis įgalinanti pozicijos keitimą nuo įprastos -->
+		<div class="box relative">Relative</div>
+
+		<!-- Absolute position - Įprasta padėtis priklausomai nuo tėvinio elemento viršaus kairės -->
+		<div class="absolute-container">
+			<div class="absolute box">absolute</div>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem hic iste
+				earum aut velit eius error adipisci nam ullam aliquid!
+			</p>
+		</div>
+
+		<nav class="sticky">
+			<a href="#">Namai</a>
+			<a href="#">Apie Mus</a>
+			<a href="#">Galerija</a>
+			<a href="#">Kontaktai</a>
+		</nav>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, debitis
+			dolores at rem perferendis aperiam, quam ab quis magnam consectetur
+			tempora eaque commodi molestias maiores placeat aut sapiente. Beatae,
+			odit.
+		</p>
+	</body>
+</html>
