@@ -58,3 +58,13 @@
 - Kitos CSS savybės;
 - Dropdown pavyzdys;
 - Puslapių kūrimo praktika;
+
+## Paskaita 6 _(2026-01-15)_
+
+- Praėjusios paskaitos aptarimas
+- [Tranzicijos/Perėjimai](https://www.w3schools.com/css/css3_transitions.asp)
+- Elementų padėties keitimas - [Transforms](https://www.w3schools.com/css/css3_2dtransforms.asp)
+- Fono nuotraukos bei jų savybės - [Backgrounds](https://www.w3schools.com/css/css3_backgrounds.asp)
+- [Overflow](https://www.w3schools.com/cssref/pr_pos_overflow.php) - scrollbarai
+- Animacijos bei keyfram'ai
+- Puslapių kūrimo praktika;

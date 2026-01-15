@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: white;
+				border: 1px solid red;
+
+				/* Tranzicijos veikimo laikas */
+				/* transition-duration: 2s; */
+
+				/* Savybė-(s), kuri turėtų būti įtraukta į tranziciją */
+				/* transition-property: background-color, width; */
+
+				/* Tranzicijos laiko funkcijos */
+				/* transition-timing-function: ease-out; */
+
+				transition: background-color 2s ease-out, width 2s ease-out,
+					transform 2s;
+
+				/* Tranzicijos uždelsimas */
+				/* transition-delay: 2s; */
+
+				/* Padėties keitimas (gali būti naudojamas procentaliai nuo elemento dydžio) */
+				/* transform: translate(100%, 0); */
+
+				/* Nurodome, kad elementas būtų pasisukęs pagal laikrodžio rodyklę X laipsnių */
+			}
+
+			.box:hover {
+				background-color: black;
+				width: 300px;
+				transform: rotate(30deg);
+			}
+
+			.bg-container {
+				height: 900px;
+				border: 1px solid red;
+				background-image: url(./images/08.webp);
+
+				background-repeat: no-repeat;
+				/* Fono padėtis konteineryje, background-position: Y,X */
+				/* background-position: center left; */
+
+				background-size: cover;
+			}
+
+			.text-container {
+				width: 200px;
+				height: 100px;
+
+				border: 1px solid black;
+			}
+
+			.another-text-container {
+				width: 600px;
+				height: 100px;
+			}
+
+			.overflow-hidden {
+				overflow: hidden;
+			}
+
+			.overflow-x {
+				overflow-x: scroll;
+			}
+
+			.overflow-y {
+				overflow-y: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+
+		<div class="bg-container"></div>
+
+		<!-- Išsikišantis turinys paslepiamas -->
+		<div class="text-container overflow-hidden">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+			magni culpa in voluptatum eos est perspiciatis eveniet officiis, dolores
+			sapiente optio veritatis sequi. Sequi vitae, placeat adipisci labore,
+			iusto unde distinctio quidem pariatur ipsam dolorum molestiae magnam saepe
+			consequuntur maiores tenetur. Veniam obcaecati, fugit, aspernatur fugiat
+			ducimus adipisci ratione animi quis labore esse nam nesciunt architecto
+			cumque quia sit error possimus blanditiis. Cumque voluptatibus at ipsum
+			quis magni quisquam harum necessitatibus voluptatum, itaque eum minus
+			delectus incidunt libero facere odit fuga nesciunt obcaecati enim sit ab
+			culpa corporis molestiae eveniet. Illo est, velit quidem totam molestiae
+			temporibus deserunt itaque aliquid.
+		</div>
+		<!-- Išsikišantis x ašyje su scroll'u -->
+		<div class="text-container overflow-x">
+			<div class="another-text-container">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+				magni culpa in voluptatum eos est perspiciatis eveniet officiis, dolores
+				sapiente optio veritatis sequi. Sequi vitae, placeat adipisci labore,
+				iusto unde distinctio quidem pariatur ipsam dolorum molestiae magnam
+				saepe consequuntur maiores tenetur. Veniam obcaecati, fugit, aspernatur
+				fugiat ducimus adipisci ratione animi quis labore esse nam nesciunt
+				architecto cumque quia sit error possimus blanditiis. Cumque
+				voluptatibus at ipsum quis magni quisquam harum necessitatibus
+				voluptatum, itaque eum minus delectus incidunt libero facere odit fuga
+				nesciunt obcaecati enim sit ab culpa corporis molestiae eveniet. Illo
+				est, velit quidem totam molestiae temporibus deserunt itaque aliquid.
+			</div>
+		</div>
+		<!-- Išsikišantis y ašyje su scroll'u -->
+		<div class="text-container overflow-y">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+			magni culpa in voluptatum eos est perspiciatis eveniet officiis, dolores
+			sapiente optio veritatis sequi. Sequi vitae, placeat adipisci labore,
+			iusto unde distinctio quidem pariatur ipsam dolorum molestiae magnam saepe
+			consequuntur maiores tenetur. Veniam obcaecati, fugit, aspernatur fugiat
+			ducimus adipisci ratione animi quis labore esse nam nesciunt architecto
+			cumque quia sit error possimus blanditiis. Cumque voluptatibus at ipsum
+			quis magni quisquam harum necessitatibus voluptatum, itaque eum minus
+			delectus incidunt libero facere odit fuga nesciunt obcaecati enim sit ab
+			culpa corporis molestiae eveniet. Illo est, velit quidem totam molestiae
+			temporibus deserunt itaque aliquid.
+		</div>
+	</body>
+</html>

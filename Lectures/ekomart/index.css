@@ -15,6 +15,12 @@ body {
 	background-color: rgb(97, 157, 36);
 }
 
+.bg-white {
+	background-color: #fff;
+}
+.bg-body {
+	background-color: #f2f2f2;
+}
 .text-nostyle {
 	text-decoration: none;
 }
@@ -23,6 +29,9 @@ body {
 	color: white;
 }
 
+.text-accent {
+	color: #629d23;
+}
 .text-sm {
 	font-size: 14px;
 }
@@ -155,6 +164,13 @@ header .container {
 	right: 3px;
 	height: 90%;
 }
+.input-container .input-button {
+	background-color: #629d23;
+	color: white;
+}
+.input-container .input-button:hover {
+	background-color: rgb(44, 60, 40);
+}
 
 #section-3 .last-section {
 	display: flex;
@@ -171,6 +187,7 @@ header .container {
 	background-color: white;
 	font-weight: bold;
 	font-size: 16px;
+	cursor: pointer;
 }
 
 .white-btn i {
@@ -205,4 +222,135 @@ header .container {
 	align-items: center;
 	border-radius: 100%;
 	font-size: 10px;
+}
+
+#header-section-4 {
+	border-bottom: 1px solid #c3c3c3;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
+
+#header-section-4 .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#header-section-4 .container a {
+	padding: 24px 22px;
+	font-weight: bold;
+}
+#header-section-4 .container a:hover {
+	color: #629d23;
+}
+
+#header-section-4 .container .nav-buttons {
+	display: flex;
+}
+
+#header-section-4 .container .nav-buttons .accented-button {
+	background-color: #629d23;
+	color: white;
+}
+#header-section-4 .container .nav-buttons .accented-button .pill {
+	background: white;
+	color: #629d23;
+	padding: 3px 6px;
+	margin-left: 6px;
+	border-radius: 30px;
+}
+
+#section-1 {
+	background-color: #f3f4f6;
+	padding: 60px 0;
+}
+
+#section-1 .cards-list {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	height: 150px;
+}
+
+#section-1 .cards-list .card {
+	background-color: white;
+	border: 1px solid rgb(221, 221, 221);
+	transition: border 400ms;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 170px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+#section-1 .cards-list .card:hover {
+	border: 1px solid #629d23;
+}
+
+#section-1 .cards-list .card img {
+	width: 50%;
+}
+
+#section-2 {
+	padding: 60px 0;
+}
+
+#section-2 .featured-cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+#section-2 .featured-cards .card h4 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+#section-2 .featured-cards .card span {
+	font-size: 12px;
+	color: gray;
+}
+#section-2 .featured-cards .card {
+	padding: 10px 30px;
+	background-color: white;
+	border: 1px solid rgb(221, 221, 221);
+	transition: border 400ms;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 170px;
+
+	flex-grow: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.featured-products {
+	display: flex;
+	gap: 15px;
+}
+.product-card {
+	background-color: #f5f6f7;
+	padding: 10px;
+	border-radius: 5px;
+	flex-shrink: 1;
+}
+
+.card-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-card img.product-image {
+	width: 100%;
+}
+
+.product-card input {
+	width: 40%;
 }

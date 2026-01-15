@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid red;
+}
+.box:hover {
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+}
+
+.fixed {
+	position: fixed;
+
+	/* top, bottom, left, right */
+	right: 10px;
+	bottom: 10px;
+}
+
+.relative {
+	/* Relative palieka rezervuotą vietą */
+	position: relative;
+
+	top: 10px;
+	left: 13px;
+	/* Prioritetas, kurį atvaizduoti priekyje, lyginant su kitais elementais. Didesnis z-index = didesnis prioritetas */
+	z-index: -1;
+}
+
+/* Atskaitos taškas absoliučiam elementui */
+.absolute-container {
+	/* absoliučią poziciją turintis elementas privalo turėti kurį nors parentą su relative pozicija */
+	position: relative;
+	height: 250px;
+	background-color: antiquewhite;
+}
+
+.absolute {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: aquamarine;
+	padding: 15px 20px;
+}
+
+/* būsenos selektorius - kai pelytės žymeklis užvedamas ant target elemento */
+nav:hover {
+	background-color: aqua;
+	/* Nurodo kad pelytės žymeklis pakeistų savo būseną */
+	cursor: pointer;
+}
+
+.sticky {
+	position: sticky;
+	top: 20px;
+	z-index: 2;
+}
