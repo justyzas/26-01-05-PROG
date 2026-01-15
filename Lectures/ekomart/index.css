@@ -4,7 +4,7 @@ body {
 	font-size: 16px;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1380px;
 
 	/* Pritaiko automatinę paraštę, kuri turinį išcentruoja kai yra didesnis ekranas nei 1200px */
 	margin: 0 auto;
@@ -85,6 +85,10 @@ header .container {
 	color: #74787c;
 }
 
+.text-dark-green {
+	color: #2c3c28;
+}
+
 .centered-vertically {
 	display: flex;
 	align-items: center;
@@ -92,4 +96,113 @@ header .container {
 
 .pl-2 {
 	padding-left: 20px;
+}
+
+#section-3 {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	gap: 60px;
+}
+
+.stylish-button:hover {
+	background-color: #629d23;
+	color: white;
+}
+
+.stylish-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f3f4f6;
+	padding: 13px 20px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+#section-3 .middle-section {
+	display: flex;
+	gap: 10px;
+}
+
+#section-3 .middle-section input {
+	width: 450px;
+	height: 100%;
+
+	background-color: #f3f4f6;
+	border: none;
+	border-radius: 5px;
+	padding-left: 20px;
+
+	/* border: 2px solid red; */
+}
+#section-3 .middle-section input:focus {
+	outline: 1px solid #629d23;
+}
+
+.input-container {
+	display: inline-block;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.input-container button {
+	position: absolute;
+
+	right: 3px;
+	height: 90%;
+}
+
+#section-3 .last-section {
+	display: flex;
+	gap: 10px;
+}
+.white-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 30px;
+	color: #2c3c28;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.white-btn i {
+	margin-right: 10px;
+}
+
+/* Ikonėlės stilizavimas per mygtuko state */
+/* .white-btn:hover i.fa-heart {
+	color: red;
+} */
+
+.white-btn:hover {
+	background-color: #629d23;
+	color: white;
+}
+
+.fa-count-container {
+	position: relative;
+}
+
+.fa-count-container span.count {
+	position: absolute;
+	top: -12px;
+	right: -12px;
+
+	width: 18px;
+	height: 18px;
+	color: white;
+	background-color: #629d23;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	font-size: 10px;
 }

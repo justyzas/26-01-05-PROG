@@ -7,4 +7,5 @@
 - **CTRL+Y** - Atstato atstatymą (Atvirkštinis veiksmas `CTRL+Z`)
 - **CTRL+D** - Pasirinkus tokį patį tekstą ir paspaudinėjus šią kombinaciją galima greitai redaguoti panašius elementus
 - **CTRL+/** - Pasirinkus teksto segmentą, arba padėjus žymeklį ant tam tikros eilutės, užkomentuoja tekstą
+- **CTRL+SPACE** - Pažymėjus dabartinį teksto vedimą tam tikroje padėtyje pateikia pasiūlymus, kas ten glai būti įrašoma
 - **SHIFT+ALT+DOWN** - Dublikuoja tokią pačią eilutę į apačią
