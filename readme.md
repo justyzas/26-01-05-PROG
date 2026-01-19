@@ -68,3 +68,13 @@
 - [Overflow](https://www.w3schools.com/cssref/pr_pos_overflow.php) - scrollbarai
 - Animacijos bei keyfram'ai
 - Puslapių kūrimo praktika;
+
+## Paskaita 7 _(2026-01-19)_
+
+- Praėjusios paskaitos aptarimas;
+- Git + GitHub, kodo versijavimas;
+- Šriftai, jo integravimas į svetaines per CDN nuorodą;
+- Šriftai, jo integravimas į svetaines per failus;
+- [CSS Grid MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout), [CSS Grid W3Schools](https://www.w3schools.com/css/css_grid.asp), elementų išdėstymo modelis;
+- [Grid Garden](https://cssgridgarden.com/) interaktyvus žaidimas, leidžiantis lengviau suprasti CSS Grid išdėstymą;
+- Puslapių kūrimo praktika;
