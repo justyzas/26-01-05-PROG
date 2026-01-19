@@ -78,3 +78,26 @@
 - [CSS Grid MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout), [CSS Grid W3Schools](https://www.w3schools.com/css/css_grid.asp), elementų išdėstymo modelis;
 - [Grid Garden](https://cssgridgarden.com/) interaktyvus žaidimas, leidžiantis lengviau suprasti CSS Grid išdėstymą;
 - Puslapių kūrimo praktika;
+
+### Git Repozitorijos integravimas (lokali kodo repozitorija)
+
+_Dirbant lokaliai, norint versijuoti kodą galima tai daryti ir jo nesusiejus su "GitHub" repozitorija_
+
+1. Atsisiūsti ir įsidiegti git
+2. Inicializuoti repozitoriją projekte/aplanke per VS code keliaujant į "Source Control" tab'ą ir spaudžiant "Initialize Repository".
+3. Užfiksuoti versiją atliekant commit (Įrašant žinutę ir spaudžiant commit)
+
+Toliau kartojamas 3. žingsnis, tarp failo papildymų.
+
+### Susiejimas GitHub
+
+1. Susikurti GitHub paskyrą.
+2. Prisijungti ir susikurti repozitoriją.
+3. Nukopijuoti nuorodą iš repozitorijos (paspaudus mygtuką code. Įsitikinti, kad kopijuojama HTTPS nuoroda).
+4. Keliauti į VS. Code, pasirinkti "Source Control" tab'ą, changes poskiltė, ikonėlė `...`>Remote>Add Remote. Įklijuoti nuorodą, nustatyti pavadinimą.
+
+---
+
+_Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius gali paprašyti autentifikuotis per naršyklę._
+
+5. "Source Control" tab'e spausti "Publish Branch" arba "Sync" mygtuką.
