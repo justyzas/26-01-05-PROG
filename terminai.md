@@ -30,3 +30,5 @@
 
 - **UI Element** –  
   Atskirta vartotojo sąsajos dalis, skirta tam tikrai funkcijai atlikti. Pavyzdžiai: mygtukas, įvesties laukas, meniu, nuoroda, kortelė.
+
+- **GIT Repository** - kodo saugykla, versijuojama per GIT

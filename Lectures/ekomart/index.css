@@ -1,6 +1,17 @@
+/* Šrifto integravimas per failus */
+
+/* @font-face {
+	font-family: "Barlow";
+	src: url(fonts/Barlow-Regular.ttf);
+} */
+
+/* Selektorius pasirinkimui kiekvieno HTML elemento */
+* {
+	font-family: Barlow, sans-serif;
+}
+
 body {
 	margin: 0;
-	font-family: Barlow, sans-serif;
 	font-size: 16px;
 }
 .container {
@@ -333,15 +344,28 @@ header .container {
 
 .featured-products {
 	display: flex;
+	flex-wrap: wrap;
+
 	gap: 15px;
 }
 .product-card {
+	min-width: 230px;
+	max-width: 300px;
 	background-color: #f5f6f7;
+	color: #6e777d;
 	padding: 10px;
 	border-radius: 5px;
-	flex-shrink: 1;
+	box-shadow: 2px 2px 5px rgba(230, 230, 230, 0.532);
 }
 
+.product-card h4 {
+	color: #2c3c28;
+	margin: 10px 0;
+}
+
+.product-card .pack-volume {
+	font-size: 14px;
+}
 .card-bottom {
 	display: flex;
 	justify-content: space-between;
@@ -353,4 +377,38 @@ header .container {
 
 .product-card input {
 	width: 40%;
+}
+
+.product-card .price .discounted-price {
+	font-size: 22px;
+	color: red;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.product-card .price {
+	margin-bottom: 15px;
+}
+
+.product-card input {
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	/* 5px - šėšėlio pasislinkimas horizontaliai, 2px šėšėlio pasislinkimas vertikaliai, 5px šėšėlio blur bei išsiplėtimas */
+	box-shadow: 5px 2px 5px rgb(204, 204, 204);
+}
+.product-card .add-to-cart {
+	border: 1px solid #629d23;
+	color: #629d23;
+	padding: 3px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+.product-card .add-to-cart:hover {
+	color: white;
+	background-color: #629d23;
 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Grid Layout</title>
+		<style>
+			.container {
+				height: 600px;
+				background-color: antiquewhite;
+				border: 3px solid orange;
+				display: grid;
+
+				/* Grid'o šablonas */
+				/* 1fr - 1 frakcija */
+
+				grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+				/* grid-template-rows: 1fr 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr; */
+			}
+
+			.box {
+				background-color: orangered;
+				border: 3px solid red;
+				font-size: 48px;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.box-1 {
+				/* Nuo kurios iki kurios eilutės turėtų atsirasti šis elementas */
+				grid-row-start: 1;
+				grid-row-end: 4;
+				/* Nuo kurio stulpelio iki kurio turėtų atsirasti šis elementas */
+				grid-column-start: 2;
+				grid-column-end: 3;
+			}
+
+			.box-2 {
+				/* jei nurodomas span - jis reiškia kiek truks */
+				grid-row: 1 / span 2;
+				/* grid-row-start: 1; */
+				/*grid-row-end: 3; */
+
+				grid-column: 3 / 4;
+				/* grid-column-start: 3;
+                grid-column-end: 4; */
+
+				/* width: 60px;
+				height: 70px;
+
+				align-self: center;
+				justify-self: end; */
+			}
+			.box-3 {
+				grid-area: 3 / 3 / 4 / 4;
+				/* grid-row-start: 3;
+                grid-column-start: 3;
+				grid-row-end: 4;
+				grid-column-end: 4; */
+				/* Nurodome elemento prioritetą (didesnis skaičiukas lipa ant kitų elementų viršaus) */
+				order: 2;
+			}
+
+			.box-4 {
+				grid-area: 3 / 1 / -1 / -1;
+				order: 1;
+				height: 100px;
+				width: 300px;
+
+				/* Savęs pozicionavimas */
+				/* start, center, end */
+				justify-self: center;
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box-1">1</div>
+			<div class="box box-2">2</div>
+
+			<div class="box box-3">3</div>
+			<div class="box box-4">4</div>
+			<div class="box">5</div>
+			<div class="box">6</div>
+		</div>
+	</body>
+</html>
