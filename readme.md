@@ -89,7 +89,7 @@ _Dirbant lokaliai, norint versijuoti kodą galima tai daryti ir jo nesusiejus su
 
 Toliau kartojamas 3. žingsnis, tarp failo papildymų.
 
-### Susiejimas GitHub
+### Susiejimas su GitHub
 
 1. Susikurti GitHub paskyrą.
 2. Prisijungti ir susikurti repozitoriją.
