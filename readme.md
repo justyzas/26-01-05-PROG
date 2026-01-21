@@ -100,4 +100,11 @@ Toliau kartojamas 3. žingsnis, tarp failo papildymų.
 
 _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius gali paprašyti autentifikuotis per naršyklę._
 
-5. "Source Control" tab'e spausti "Publish Branch" arba "Sync" mygtuką.
+5. "Source Control" tab'e spausti "Publish Branch" arba "Sync Changes" mygtuką.
+
+## Paskaita 8 _(2026-01-21)_
+
+- Praėjusios paskaitos aptarimas;
+- HTML formos, jų atributai; [W3](https://www.w3schools.com/html/html_forms.asp), [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form)
+- Įvesties elementų stilizavimas
+- Puslapių kūrimo praktika

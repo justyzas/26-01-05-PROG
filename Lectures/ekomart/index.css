@@ -7,6 +7,7 @@
 
 /* Selektorius pasirinkimui kiekvieno HTML elemento */
 * {
+	box-sizing: border-box;
 	font-family: Barlow, sans-serif;
 }
 
@@ -361,6 +362,10 @@ header .container {
 .product-card h4 {
 	color: #2c3c28;
 	margin: 10px 0;
+	cursor: pointer;
+}
+.product-card h4:hover {
+	color: #629d23;
 }
 
 .product-card .pack-volume {
@@ -373,6 +378,7 @@ header .container {
 
 .product-card img.product-image {
 	width: 100%;
+	/* height: 100%; */
 }
 
 .product-card input {
@@ -411,4 +417,135 @@ header .container {
 .product-card .add-to-cart:hover {
 	color: white;
 	background-color: #629d23;
+}
+
+.product-card .image-container {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.product-card .image-container img.product-image {
+	height: 100%;
+	transition: scale 500ms ease-out;
+}
+.product-card .image-container .menu-bar {
+	width: 60%;
+	height: 100px;
+	color: white;
+	background-color: #629d23;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateX(90deg);
+	transition: transform 200ms;
+
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	padding: 10px 10px;
+}
+
+.product-card .image-container .menu-bar .icon-spot {
+	width: 28px;
+	height: 28px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px dashed white;
+	cursor: pointer;
+	transition: background-color 500ms;
+}
+
+.product-card .image-container .menu-bar .icon-spot:hover {
+	background-color: white;
+}
+
+.product-card .image-container .menu-bar .icon-spot:hover i {
+	color: #629d23;
+	animation: icon-resize 500ms;
+}
+
+.product-card .image-container .menu-bar .icon-spot i {
+	font-size: 14px;
+	transition: color 500ms;
+}
+
+.product-card:hover .image-container .menu-bar {
+	transform: translate(-50%, -50%) rotateX(0deg);
+}
+.product-card:hover .image-container img.product-image {
+	scale: 120%;
+}
+
+@keyframes icon-resize {
+	0% {
+		scale: 0%;
+	}
+	100% {
+		scale: 100%;
+	}
+}
+
+#section-4 {
+	padding-bottom: 60px;
+}
+
+#section-4 .products-with-discounts {
+	border: 1px solid orangered;
+	background-color: rgba(255, 165, 0, 0.1);
+	height: 500px;
+	border-radius: 8px;
+	padding: 30px;
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 15px;
+}
+
+#section-4 .products-with-discounts .card {
+	/* background-color: #629d23; */
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+#section-4 .products-with-discounts .card.promo {
+	background-size: cover;
+	background-position: bottom 30% left 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: white;
+	padding: 30px;
+}
+#section-4 .products-with-discounts .card.promo h4 {
+	margin: 0;
+	font-size: 22px;
+}
+#section-4 .products-with-discounts .card.first-promo {
+	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/01.jpg);
+}
+#section-4 .products-with-discounts .card.second-promo {
+	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/02.jpg);
+}
+
+.product-card.horizontal {
+	max-width: 100%;
+	display: flex;
+	gap: 20px;
+	background-color: white;
+}
+.product-card.horizontal .image-container {
+	border: 1px solid rgb(230, 230, 230);
+}
+.product-card.horizontal .image-container img {
+	/* Nustato, kad nuotrauka nekeistų savo proporcijų */
+	object-fit: contain;
+}
+.product-card.horizontal button {
+	background-color: white;
 }

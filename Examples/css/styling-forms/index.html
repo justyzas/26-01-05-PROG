@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+
+		<script
+			src="https://kit.fontawesome.com/6b94fa1050.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.reg-form {
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			.reg-form > div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+
+			.reg-form > div input {
+				width: 60%;
+				padding: 8px 20px;
+				padding-left: 30px;
+				/* apvadas aplink input'ą, kuris atsiranda pažymėjus input elementą */
+				outline: none;
+			}
+			/* Aktyvaus input elemento stilizavimas */
+			/* .reg-form > div > input:focus {
+				outline: 5px solid blue;
+			} */
+			label {
+				cursor: pointer;
+			}
+			input {
+				border: none;
+				box-shadow: 2px 2px 4px rgba(84, 84, 84, 0.293);
+			}
+			label:hover + .input-container input {
+				box-shadow: 5px 5px 10px rgba(7, 129, 163, 0.975);
+			}
+
+			.reg-form > div > label {
+				width: 30%;
+			}
+			.reg-form > div.terms > label {
+				width: auto;
+			}
+			.reg-form > div.terms input {
+				width: auto;
+				margin-right: 20px;
+			}
+			.reg-form > div.terms {
+				justify-content: start;
+			}
+			.reg-form > div > .input-container input {
+				width: 100%;
+			}
+			.input-container {
+				display: inline-block;
+				width: 60%;
+				position: relative;
+			}
+			.fa-regular,
+			.fa-solid {
+				position: absolute;
+				top: 50%;
+				left: 7px;
+				transform: translateY(-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+    - Vardas Pavardė 
+    - Gimimo metai
+    - Elektroninio pašto adresas
+    - Slaptažodis
+    - Sutinku su privatumo politika ir vidaus naudojimos taisyklėmis
+    
+    -->
+
+		<form class="reg-form">
+			<div>
+				<label for="full-name">Jūsų vardas</label>
+
+				<input
+					type="text"
+					name="full-name"
+					id="full-name"
+				/>
+			</div>
+			<div>
+				<label for="dob">Gimimo data</label>
+				<div class="input-container">
+					<i class="fa-solid fa-calendar"></i>
+					<input
+						type="date"
+						name="dob"
+						id="dob"
+					/>
+				</div>
+			</div>
+			<div>
+				<label for="email">El Paštas</label>
+				<div class="input-container">
+					<i class="fa-regular fa-envelope"></i>
+					<input
+						type="email"
+						name="email"
+						id="email"
+					/>
+				</div>
+			</div>
+			<div>
+				<label for="dob">Slaptažodis</label>
+
+				<div class="input-container">
+					<i class="fa-solid fa-lock"></i>
+					<input
+						type="password"
+						name="password"
+						id="password"
+					/>
+				</div>
+			</div>
+			<div class="terms">
+				<input
+					type="checkbox"
+					id="accept-terms"
+					required
+				/>
+				<label for="accept-terms"
+					>Sutinku su <a href="#">Salygomis</a> ir
+					<a href="#">Privatumo politika</a></label
+				>
+			</div>
+			<button type="submit">Registruotis</button>
+		</form>
+	</body>
+</html>

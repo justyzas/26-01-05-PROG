@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Formos, HTML User input'as</title>
+	</head>
+	<body>
+		<!-- form elementas, yra skirtas surinkti ir išsiūsti surinktus duomenis iš puslapio -->
+		<!-- Norint, kad formos surinktų duomenis yra reikalingas atributas name (tuose input elementuose kurių duomenis norėsime išsiūsti) -->
+		<form action="localhost:3000">
+			<!-- Input - įvesties elementas -> Inline elementas -->
+
+			<!-- Atributas maxlength nustato simbolių ribą, kiek daugiausiai jų galima įvesti -->
+			<!-- Teksto įvestis -->
+			<!-- Value atributas nustato pradinę įvesties elemento reikšmę -->
+			<!-- Placeholder atributas nustato pavyzdinį tekstą vedamą į įvesties elementą -->
+			<!-- required atributas nurodo, kad įvestyje privalo būti kokia nors reikšmė prieš išsiunčiant formą -->
+			<label for="name">Jūsų vardas</label>
+			<input
+				id="name"
+				type="text"
+				value="John Doe"
+			/>
+
+			<!-- Skaičiaus įvestis -->
+			<div>
+				<label for="age">Amžius</label>
+				<input
+					type="number"
+					id="age"
+					name="age"
+					min="10"
+					max="100"
+					required
+				/>
+			</div>
+			<!-- Telefono numerio įvestis -->
+			<div>
+				<label for="phone-number"> Telefono numeris </label>
+				<input
+					id="phone-number"
+					type="tel"
+					name="phone"
+					minlength="12"
+					maxlength="12"
+					placeholder="+37060000000"
+				/>
+			</div>
+			<div>
+				<label for="password"> Slaptažodis </label>
+				<input
+					id="password"
+					type="password"
+					name="password"
+					placeholder="Your password"
+				/>
+			</div>
+			<div>
+				<label for="email"> El. pašto adresas </label>
+				<input
+					id="email"
+					type="email"
+					name="email"
+					placeholder="john@doe.com"
+				/>
+			</div>
+
+			<div>
+				<!-- checked - nustato, kad checkbox būtų pažymėtas formos pradžioje -->
+				<input
+					type="checkbox"
+					id="scales"
+					name="scales"
+					checked
+				/>
+				<label for="scales">Scales</label>
+			</div>
+
+			<div>
+				<input
+					type="checkbox"
+					id="horns"
+					name="horns"
+				/>
+				<label for="horns">Horns</label>
+			</div>
+
+			<!-- <input
+				type="submit"
+				value="Išsiūsti formą"
+			/> -->
+			<button type="reset">Atstatyti reikšmes</button>
+			<button type="submit">Išsiūsti formą</button>
+		</form>
+	</body>
+</html>
