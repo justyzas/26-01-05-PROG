@@ -67,6 +67,7 @@ body {
 header .container {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .border-bottom {
@@ -75,6 +76,16 @@ header .container {
 
 .left-border-only {
 	border-left: 1px solid rgb(231, 230, 230);
+}
+
+.long-text {
+	display: none !important;
+}
+
+@media (min-width: 780px) {
+	.long-text {
+		display: flex !important;
+	}
 }
 
 .horizontal-borders-only {
@@ -90,12 +101,18 @@ header .container {
 	align-items: center;
 }
 
+#header-section-4 .nav-links {
+	overflow-x: auto;
+}
+
 .full-height {
 	height: 100%;
 }
 
 .nav-button {
 	padding: 15px 0;
+	display: flex;
+	align-items: center;
 }
 
 .nav-button.wider {
@@ -118,12 +135,18 @@ header .container {
 .pl-2 {
 	padding-left: 20px;
 }
-
 #section-3 {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+	flex-direction: column;
 	padding: 20px 0;
-	gap: 60px;
+	gap: 10px;
+}
+@media (min-width: 768px) {
+	#section-3 {
+		flex-direction: row;
+		gap: 60px;
+	}
 }
 
 .stylish-button:hover {
@@ -147,10 +170,11 @@ header .container {
 #section-3 .middle-section {
 	display: flex;
 	gap: 10px;
+	flex-grow: 1;
 }
 
 #section-3 .middle-section input {
-	width: 450px;
+	width: 100%;
 	height: 100%;
 
 	background-color: #f3f4f6;
@@ -164,9 +188,14 @@ header .container {
 	outline: 1px solid #629d23;
 }
 
+#section-3 .logo {
+	max-width: 250px;
+}
+
 .input-container {
 	display: inline-block;
 	position: relative;
+	flex-grow: 1;
 	display: flex;
 	align-items: center;
 }
@@ -186,8 +215,10 @@ header .container {
 
 #section-3 .last-section {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 }
+
 .white-btn {
 	display: flex;
 	justify-content: center;
@@ -200,6 +231,7 @@ header .container {
 	font-weight: bold;
 	font-size: 16px;
 	cursor: pointer;
+	flex-grow: 1;
 }
 
 .white-btn i {
@@ -245,9 +277,14 @@ header .container {
 
 #header-section-4 .container {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 }
-
+@media (min-width: 1140px) {
+	#header-section-4 .container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
 #header-section-4 .container a {
 	padding: 24px 22px;
 	font-weight: bold;
@@ -283,6 +320,7 @@ header .container {
 	justify-content: space-between;
 	gap: 15px;
 	height: 150px;
+	overflow-x: auto;
 }
 
 #section-1 .cards-list .card {
@@ -291,7 +329,7 @@ header .container {
 	transition: border 400ms;
 	cursor: pointer;
 	border-radius: 4px;
-	width: 170px;
+	min-width: 150px;
 
 	display: flex;
 	flex-direction: column;
@@ -315,6 +353,7 @@ header .container {
 #section-2 .featured-cards {
 	display: flex;
 	justify-content: space-between;
+	overflow-x: auto;
 	gap: 20px;
 }
 
@@ -345,8 +384,9 @@ header .container {
 
 .featured-products {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 
+	overflow-x: scroll;
 	gap: 15px;
 }
 .product-card {
@@ -497,14 +537,50 @@ header .container {
 #section-4 .products-with-discounts {
 	border: 1px solid orangered;
 	background-color: rgba(255, 165, 0, 0.1);
-	height: 500px;
+	min-height: 500px;
 	border-radius: 8px;
 	padding: 30px;
-	display: grid;
 
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 15px;
+}
+
+#section-4 .products-with-discounts .card.first-promo {
+	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/01.jpg);
+}
+
+#section-4 .products-with-discounts .card.second-promo {
+	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/02.jpg);
+}
+
+@media (min-width: 500px) {
+	#section-4 .products-with-discounts {
+		grid-template-columns: 1fr 1fr;
+	}
+	#section-4 .products-with-discounts .card.first-promo {
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+	}
+	#section-4 .products-with-discounts .card.second-promo {
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+}
+
+@media (min-width: 1000px) {
+	#section-4 .products-with-discounts {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#section-4 .products-with-discounts .card.first-promo {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+	#section-4 .products-with-discounts .card.second-promo {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
 }
 
 #section-4 .products-with-discounts .card {
@@ -522,15 +598,10 @@ header .container {
 	color: white;
 	padding: 30px;
 }
+
 #section-4 .products-with-discounts .card.promo h4 {
 	margin: 0;
 	font-size: 22px;
-}
-#section-4 .products-with-discounts .card.first-promo {
-	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/01.jpg);
-}
-#section-4 .products-with-discounts .card.second-promo {
-	background-image: url(https://html.themewant.com/ekomart/assets/images/discount-product/02.jpg);
 }
 
 .product-card.horizontal {
@@ -549,3 +620,52 @@ header .container {
 .product-card.horizontal button {
 	background-color: white;
 }
+
+#section-5 {
+	padding: 60px 30px;
+	background-color: #f3f4f6;
+}
+
+#section-5 .row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pill-button {
+	padding: 7px 20px;
+	border-radius: 15px;
+	color: #2c3c28;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.pill-button.active {
+	background-color: #629d23;
+	color: white;
+}
+
+.pill-button:hover {
+	background-color: #629d23;
+	color: white;
+}
+
+#section-5 .items-grid {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+	/* gap: 15px; */
+	row-gap: 40px;
+}
+
+.items-grid .product-card {
+	justify-self: center;
+}
+/* @media (min-width: 700px) {
+	#section-5 .items-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+} */

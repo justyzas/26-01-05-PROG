@@ -108,3 +108,11 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - HTML formos, jų atributai; [W3](https://www.w3schools.com/html/html_forms.asp), [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form)
 - Įvesties elementų stilizavimas
 - Puslapių kūrimo praktika
+
+## Paskaita 9 _(2026-01-22)_
+
+- Praėjusios paskaitos aptarimas;
+- Responsyvus dizainas, konceptas;
+- Kaip responsyvus dizainas taikomas praktikoje;
+- Iframe, kito page atvaizdavimas puslapyje;
+- Puslapių kūrimo praktika;

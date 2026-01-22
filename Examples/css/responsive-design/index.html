@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			/* Responsive grid 1 */
+			#responsive-grid-1 .grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 1rem;
+			}
+
+			.card {
+				background: #f3f4f6;
+				padding: 1.5rem;
+				border-radius: 12px;
+			}
+
+			/* Responsive grid 2 */
+			#responsive-grid-2 .grid {
+				display: grid;
+				gap: 1rem;
+			}
+			/* 
+			@media (min-width: 0px) {
+				#responsive-grid-2 .grid {
+					grid-template-columns: 1fr;
+				}
+			} */
+
+			@media (min-width: 640px) {
+				#responsive-grid-2 .grid {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+			@media (min-width: 1024px) {
+				#responsive-grid-2 .grid {
+					grid-template-columns: repeat(4, 1fr);
+				}
+			}
+			/* Responsive flex */
+			.responsive-flex {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+			}
+			.responsive-flex .card {
+				/* shorthand */
+				flex: 1 1 300px;
+
+				/* flex-shrink: 1;
+				flex-grow: 1;
+				flex-basis: 250px; */
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Responsive grid 1</h3>
+		<!-- Best for: cards, dashboards, galleries.  -->
+		<div id="responsive-grid-1">
+			<div class="grid">
+				<div class="card">1</div>
+				<div class="card">2</div>
+				<div class="card">3</div>
+				<div class="card">4</div>
+			</div>
+		</div>
+		<h3>Responsive grid 2</h3>
+		<!-- Best for: marketing pages, strict layouts. -->
+		<div id="responsive-grid-2">
+			<div class="grid">
+				<div class="card">1</div>
+				<div class="card">2</div>
+				<div class="card">3</div>
+				<div class="card">4</div>
+			</div>
+		</div>
+
+		<h3>Responsive flex</h3>
+		<!-- Responsive Flex -->
+		<div class="responsive-flex">
+			<div class="card">1</div>
+			<div class="card">2</div>
+			<div class="card">3</div>
+			<div class="card">4</div>
+			<div class="card">1</div>
+			<div class="card">2</div>
+			<div class="card">3</div>
+			<div class="card">4</div>
+		</div>
+	</body>
+</html>
