@@ -116,3 +116,19 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Kaip responsyvus dizainas taikomas praktikoje;
 - Iframe, kito page atvaizdavimas puslapyje;
 - Puslapių kūrimo praktika;
+
+---
+
+# JavaScript
+
+## Paskaita 10 _(2026-01-26)_
+
+- Šaltiniai [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [W3](https://www.w3schools.com/js/default.asp)
+- Įvadas į programavimą;
+- JavaScript integracijos būdai;
+- Kintamojo samprata, kintamųjų įvardinimo taisyklės (camelCase), deklaravimas, kintamųjų tipai;
+- Įvestis/išvestis;
+- Skaičių manipuliacijos;
+- Teksto manipuliacijos;
+
+---

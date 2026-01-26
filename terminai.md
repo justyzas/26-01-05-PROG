@@ -32,3 +32,5 @@
   Atskirta vartotojo sąsajos dalis, skirta tam tikrai funkcijai atlikti. Pavyzdžiai: mygtukas, įvesties laukas, meniu, nuoroda, kortelė.
 
 - **GIT Repository** - kodo saugykla, versijuojama per GIT
+
+- **Script** - Scenarijus arba programa, atliekanti iš anksto numatytus veiksmus pagal iš anksto nustatytą tvarką.
