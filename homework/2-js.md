@@ -5,17 +5,21 @@ Gautą įvestį paverskite skaičiumi ir konsolėje pateikite aprašymą apie š
 
 #### Atvejis 1:
 
+```
 Gauta įvestis: 8,
 Ar tai yra skaičius? Taip
 Ar skaičius yra lyginis skaičius? Taip
 Ar kvadratinė šaknis iš šio skaičiaus yra sveikas skaičius? Ne
+```
 
 ---
 
 #### Atvejis 2:
 
+```
 Gauta įvestis: abcds15
 Ar tai yra skaičius? Ne
+```
 
 ---
 
@@ -24,11 +28,14 @@ Ar tai yra skaičius? Ne
 Sukurkite funkciją, kuriai perdavus skaičių būtų pagaminama savaitės diena;
 
 ```js
-console.log(savaitesDiena(5)); // Penktadienis
-console.log(savaitesDiena(7)); // Sekmadienis
-console.log(savaitesDiena(1)); // Pirmadienis
-console.log(savaitesDiena(0)); // Sekmadienis
-console.log(savaitesDiena(-1)); // Šeštadienis
-console.log(savaitesDiena(8)); // Pirmadienis
-console.log(savaitesDiena(10)); // Trečiadienis
+console.log(savaitesDiena(5)); // "Penktadienis"
+console.log(savaitesDiena(7)); // "Sekmadienis"
+console.log(savaitesDiena(1)); // "Pirmadienis"
+console.log(savaitesDiena(0)); // "Sekmadienis"
+console.log(savaitesDiena(-1)); // "Šeštadienis"
+console.log(savaitesDiena(8)); // "Pirmadienis"
+console.log(savaitesDiena(10)); // "Trečiadienis"
+console.log(savaitesDiena(NaN)); // ""
+console.log(savaitesDiena("text")); // ""
+console.log(savaitesDiena("1")); // "Pirmadienis"
 ```
