@@ -69,4 +69,4 @@ Parašyti programą, kuri:
 _extra jei buvo per lengva_
 
 - konsolėje parašo, kiek liko dienų iki naujųjų metų.
-- konsolėje parašo, prieš kiek dienų buvo
+- konsolėje parašo, prieš kiek dienų buvo paskutiniai naujieji metai.

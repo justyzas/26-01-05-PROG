@@ -22,24 +22,28 @@ let text = "HELLO WORLD";
 //          0123456789(10)
 let char1 = text.charAt(4);
 let char2 = text[10];
+let char3 = text.at(5);
+
 console.log(char1);
 
 // Teksto dalies pasirinkimas .slice
 
 let fruits = "Apple, Banana, Kiwi, Melon";
 
-console.log(fruits.slice(7, 13));
+console.log(fruits.slice(7, 13)); // banana
 // Nuo 8 simb. iki galo
-console.log(fruits.slice(7));
+console.log(fruits.slice(7)); // Banana, Kiwi, Melon
 // Pirmi 5 simboliai
-console.log(fruits.slice(0, 5));
-// Paskutiniai 5 simboliai
-console.log(fruits.slice(-7));
+console.log(fruits.slice(0, 5)); // Apple
+// Paskutiniai 7 simboliai
+console.log(fruits.slice(-5)); // Melon
 
 // Case conversion - didinti/mažinti visas teksto raides
 
-let fruitsUpper = fruits.toUpperCase();
-let fruitsLower = fruits.toLowerCase();
+let fruitsUpper = fruits.toUpperCase(); // "APPLE, BANANA, KIWI, MELON"
+let fruitsLower = fruits.toLowerCase(); // "apple, banana, kiwi, melon"
+
+fruitsLower[0] = fruitsLower[0].toUpperCase(); //"Apple, banana, kiwi, melon" - taip neveikia, stringai yra immutable (nekeičiami)
 
 console.log(fruitsUpper);
 console.log(fruitsLower);
@@ -48,9 +52,9 @@ console.log(fruitsLower);
 let emailRaw = "  justinas@bit .lt      ";
 console.log(emailRaw);
 
-let emailCleanStart = emailRaw.trimStart();
-let emailCleanEnd = emailRaw.trimEnd();
-let emailClean = emailRaw.trim();
+let emailCleanStart = emailRaw.trimStart(); // "justinas@bit .lt      "
+let emailCleanEnd = emailRaw.trimEnd(); // "  justinas@bit .lt"
+let emailClean = emailRaw.trim(); // "justinas@bit .lt"
 
 console.log(emailCleanStart);
 console.log(emailCleanEnd);

@@ -132,3 +132,18 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Teksto manipuliacijos;
 
 ---
+
+## Paskaita 11 _(2026-01-28)_
+
+- Praeitos paskaitos aptarimas;
+- Kintamojo tipo keitimas;
+- Matematinės funkcijos;
+- Salyginiai sakiniai;
+- Funkcijos, metodai;
+
+---
+
+## Paskaitos 12 _(2026-01-29)_
+
+- DOM interakcijos, HTML elementų manipuliavimas;
+- Input elementų/formų apdorojimas;

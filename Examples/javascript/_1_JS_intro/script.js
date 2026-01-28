@@ -1,12 +1,13 @@
 // Čia yra komentaras
 // Kintamųjų tipai:
-// Skaičiai, Tekstas, (true/false), (null/undefined)
+// Skaičiai, Tekstas, boolean (true/false), (null/undefined)
 
 // Kintamojo deklaravimas yra nurodymas/direktyva,
 // kad toks kintamasis egzistuoja mūsų programoje
 let manoSkaicius,
 	KazioSkaicius = 3;
 
+console.log(manoSkaicius); // undefined
 manoSkaicius = 8;
 // Matematiniai operatoriai:
 // + = sudėtis,
