@@ -3,6 +3,7 @@ let sumaBePvm = 0;
 function greet(name) {
 	console.log(`Hello, ${name}!`);
 }
+
 // Vėliau funkcija gali būti iškviečiama
 greet("Alice");
 greet("Justinas");
@@ -31,6 +32,7 @@ function pritaikytiPvm(vienetoKaina, kiekis = 1, pvm = 21) {
 console.log(pritaikytiPvm(10, 10, 21)); // 121
 console.log(pritaikytiPvm(10, 10)); // 121
 console.log(pritaikytiPvm(10, 10, 25)); // 125
+let pilnaiApskaiciuotaSuma = pritaikytiPvm(0.12, 100);
 console.log(pritaikytiPvm(5, -10, -10000)); // 11.8
 
 function formatuotiEur(suma) {
@@ -49,4 +51,4 @@ function countdown() {
 }
 
 // Naudojame funkciją formatuotiEur su pritaikytiPvm rezultatu
-console.log(formatuotasSuPvm(0.12));
+console.log(formatuotasSuPvm(0.12)); // '0.15€'

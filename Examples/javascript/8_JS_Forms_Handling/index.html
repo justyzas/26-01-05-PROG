@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Forms Handling</title>
+	</head>
+	<body>
+		<h1>Registracija į bėgimą</h1>
+		<hr />
+		<ol>
+			<li>Visi bėgikai privalo užpildyti registracijos formą</li>
+			<li>Visi bėgikai privalo sutikti su sąlygomis</li>
+			<li>Visi bėgikai privalo būti sveiki</li>
+			<li>Visi bėgikai privalo vyresni nei 8 metų amžiaus</li>
+			<li>Visi bėgikai privalo jaunesni nei 80 metų amžiaus</li>
+		</ol>
+		<hr />
+		<div>
+			<input
+				type="text"
+				placeholder="Iveskite savo vardą"
+				id="input-name"
+			/>
+		</div>
+		<div>
+			<input
+				type="number"
+				placeholder="Iveskite savo amžių"
+				id="input-age"
+			/>
+		</div>
+		<div>
+			<label for="accept-terms">Sutinku su sąlygomis ir tikrai nesergu!</label>
+			<input
+				type="checkbox"
+				id="accept-terms"
+			/>
+		</div>
+		<button onclick="registerRunner()">Registruoti bėgiką</button>
+
+		<hr />
+
+		<p>Bėgikų skaičius: <b id="runners-count">0</b></p>
+		<h2>Užregistruoti bėgikai:</h2>
+		<ol id="runners-list"></ol>
+
+		<script src="index.js"></script>
+	</body>
+</html>

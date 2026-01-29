@@ -145,5 +145,7 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 
 ## Paskaitos 12 _(2026-01-29)_
 
+- Praeitos paskaitos pakartojimas aptarimas/Klausimai;
+- Masyvai, duomenų kolekcijos, bei jų funkcijos;
 - DOM interakcijos, HTML elementų manipuliavimas;
 - Input elementų/formų apdorojimas;

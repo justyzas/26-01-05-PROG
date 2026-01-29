@@ -2,6 +2,7 @@ console.log("---- JS Type conversions ----");
 
 // Types in JS:
 // Primitive types: string, number, boolean, null, undefined, NaN
+// Object (complex) types: object, array, function
 
 let text = "a"; // string
 
@@ -53,6 +54,7 @@ console.log(String(5)); // "5" - number to string
 console.log(String(true)); // "true" - boolean to string
 console.log(String(false)); // "false" - boolean to string
 
+console.log(Boolean(-1)); // true - number to boolean
 console.log(Boolean(-1)); // true - number to boolean
 console.log(Boolean(0)); // false - number to boolean
 console.log(Boolean("hello")); // true - non-empty string to boolean

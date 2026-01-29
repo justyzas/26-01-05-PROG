@@ -3,11 +3,11 @@
 
 let isRaining = true;
 
-// if (isRaining) {
-// 	console.log("Take an umbrella!");
-// } else {
-// 	console.log("No need for an umbrella.");
-// }
+if (isRaining) {
+	console.log("Take an umbrella!");
+} else {
+	console.log("No need for an umbrella.");
+}
 
 let temperature = 16;
 
@@ -60,6 +60,10 @@ if (pirkejoAmzius < 18) {
 	// true || false = true
 	// false || true = true
 	// false || false = false
+
+	// ! - ne
+	// !true = false
+	// !false = true
 
 	let kainaSuNuolaida = (bazineKaina * 0.8).toFixed(2);
 	console.log(

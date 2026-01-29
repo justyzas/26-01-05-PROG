@@ -16,7 +16,6 @@ console.log(Math.pow(2, 3)); // 8 - Power - Laipsnis
 console.log(Math.abs(-7.25)); // 7.25 - Absolute - Absoliutusis dydis
 console.log(Math.abs(7.25)); // 7.25 - Absolute - Absoliutusis dydis
 
-console.log(10 % 3); // 1 - Modulo operatorius - Liekana
 console.log(10 + 3); // 13 - Sudėtis
 console.log(10 - 3); // 7 - Atimtis
 console.log(10 * 3); // 30 - Daugyba
@@ -30,7 +29,7 @@ console.log(4 + 6 * 2); // 16
 console.log((4 + 5 + 6 + 7 + 8 + 9 + 10) / 7); // 7 - Aritmetinis vidurkis
 
 // Apvalinimo funkcijos
-let sk4 = 4.0000000001;
+let sk4 = 4.5;
 
 console.log(Math.round(sk4)); // 5 - Suapvalinimas iki artimiausio sveikojo
 
