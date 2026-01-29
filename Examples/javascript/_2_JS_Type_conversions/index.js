@@ -19,6 +19,15 @@ console.log(typeof console.log); // "function"
 // console.log(typeof []); // "object" (arrays are objects in JS)
 console.log(typeof new Date()); // "object"
 
+// -- Checking for NaN ----
+let a = "hello" / 2; // NaN
+console.log(a); // NaN
+console.log(isNaN(a)); // true
+console.log(isNaN(NaN)); // true
+console.log(isNaN(5)); // false
+console.log(isNaN("Tekstas")); // true
+console.log(isNaN("5")); // false
+
 // -- Implicit type conversion (coercion) ----
 console.log("5" + 3); // "53" - number 3 is converted to string "3"
 console.log("5" - 3); // 2 - string "5" is converted to number 5
