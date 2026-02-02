@@ -22,6 +22,8 @@
 - **HTML Tag atributai** –  
   Papildoma informacija, pridedama prie HTML žymos, kuri keičia arba papildo jos veikimą. Atributai rašomi žymos viduje, pavyzdžiui: `href`, `src`, `class`, `id`.
 
+- **Iteracija** - tai to paties veiksmo kartojimas kelis kartus, dažniausiai naudojant ciklą.
+
 - **Serveris** –  
   Kompiuteris arba programa, kuri saugo svetainės failus ir pateikia juos vartotojams per internetą. Kai naršyklė paprašo puslapio, serveris atsiunčia HTML, CSS, JavaScript ir kitus reikalingus duomenis.
 

@@ -11,7 +11,11 @@ const myPhotos = [
 // CSS selektoriai
 const myTextParagraph = document.querySelector("#my-text");
 // textContent - keičia arba grąžina elemento tekstą (neinterpretuoja HTML žymų)
-myTextParagraph.textContent = "This text has been changed using JavaScript!";
+
+console.log(myTextParagraph.textContent); //old text
+
+myTextParagraph.textContent =
+	"This text has been changed using JavaScript! <br> nauja eilute";
 // console.log(myTextParagraph.textContent);
 
 // innerHTML - keičia arba grąžina elemento vidinį HTML kodą
@@ -22,6 +26,7 @@ myTextParagraph.innerHTML =
 
 function addStyles() {
 	myTextParagraph.classList.add("special-text");
+	// myTextParagraph.classList.remove("special-text");
 }
 
 let currentPhotoIndex = 0;

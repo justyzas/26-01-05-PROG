@@ -15,7 +15,7 @@ function registerRunner() {
 	let runnerAge = Number(runnerAgeStr); // Konvertuojame string į number
 
 	// Jei varnelė pažymėta, gauname true, jei ne - false
-	let hasAcceptedTerms = inputAcceptTerms.checked; // Gauname boolean reikšmę
+	let hasAcceptedTerms = inputAcceptTerms.checked; // Gauname boolean reikšmę // false
 
 	if (isNaN(runnerAge) || runnerAge <= 8) {
 		alert("Amžius turi būti skaičius ir didesnis nei 8.");

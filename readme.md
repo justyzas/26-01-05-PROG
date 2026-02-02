@@ -149,3 +149,12 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Masyvai, duomenų kolekcijos, bei jų funkcijos;
 - DOM interakcijos, HTML elementų manipuliavimas;
 - Input elementų/formų apdorojimas;
+
+---
+
+## Paskaita 13 _(2026-02-02)_
+
+- Praeitos paskaitos pakartojimas aptarimas/Klausimai;
+- Naujas duomenų tipas: Objektai
+- Ciklai
+- Masyvų metodai

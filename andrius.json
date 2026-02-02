@@ -1,0 +1,9 @@
+{
+	"vardas": "Andrius",
+	"pavarde": "Pakutinskas",
+	"gimimoData": "1989-12-08",
+	"tattooCount": 5,
+	"arSusituokes": true,
+	"vaikai": ["Elzė", "Jaunius", "Marytė"],
+	"zmona": null
+}
