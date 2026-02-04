@@ -156,5 +156,13 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 
 - Praeitos paskaitos pakartojimas aptarimas/Klausimai;
 - Naujas duomenų tipas: Objektai
-- Ciklai
+- Ciklai, užduočių kartojimas N kartų
 - Masyvų metodai
+
+## Paskaita 14 _(2026-02-04)_
+
+- Praeitos paskaitos pakartojimas aptarimas/Klausimai;
+- Duomenų saugojimas naršyklėje;
+- Dinaminis duomenų atvaizdavimas;
+- DOM pakartojimas + DOM medžio apžvalga;
+- Event Listeners/įvykių apdorojimas;

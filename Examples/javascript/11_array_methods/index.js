@@ -4,7 +4,9 @@
 // }
 
 const tasksList = document.getElementById("tasks");
+
 // masyvo metodas - foreach
+// Anoniminė funkcija => arrow funkcija
 tasks.forEach((v) => {
 	tasksList.innerHTML += `<li>${v.title}</li>`;
 });
@@ -30,7 +32,7 @@ console.log(shorterTasks);
 
 // filtrų parametras-funkcija turi atiduoti true/false reikšmę.
 // true reikšmė reiškia, kad elementas filtrą praeina.
-const onlyNotCompletedTasks = tasks.filter((task) => !task.completed);
+const onlyNotCompletedTasks = tasks.filter((task) => task.completed);
 console.log(onlyNotCompletedTasks);
 const onlyCompletedTasks = tasks.filter((task) => task.completed);
 console.log(onlyCompletedTasks);
@@ -52,11 +54,15 @@ const arVisiSkaiciaiAtitinkaApribojimus = skaiciai.every((sk) => {
 
 console.log(arVisiSkaiciaiAtitinkaApribojimus);
 
+// Indekso gražinimas
 const andrewTaskIndex = tasks.findIndex((task) => {
 	return task.userId === 7 && !task.completed;
 });
+const andrewTask = tasks.find((task) => {
+	return task.userId === 7 && !task.completed;
+});
 
-console.log(tasks[andrewTaskIndex]);
+console.log(tasks[andrewTaskIndex] === andrewTask); //true
 
 // Rikiavimo funkcija -
 // [10, 20, 11, 28, 18, 6, 2, -10];

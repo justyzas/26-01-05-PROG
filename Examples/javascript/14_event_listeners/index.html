@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul
+				id="password-explanation"
+				class="hidden"
+			>
+				<li>Slaptažodis turi būti bent 8 simbolių arba ilgesnis</li>
+				<li>Slaptažodžio maksimalus ilgis 28 simboliai</li>
+				<li>Slaptažodyje turi būti bent viena didžioji raidė</li>
+				<li>Slaptažodyje turi būti bent viena mažoji raidė</li>
+				<li>Slaptažodyje turi būti bent vienas skaičius</li>
+				<li>Slaptažodyje turi būti bent vienas specialusis simbolis</li>
+			</ul>
+			<input
+				type="password"
+				placeholder="Įveskite slaptažodį"
+				id="password-input"
+			/>
+			<button id="show-password">Rodyti slaptažodį</button>
+			<button id="check-password">Tikrinti slaptažodį</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

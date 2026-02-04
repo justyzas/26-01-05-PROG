@@ -29,9 +29,10 @@ const begikai = [
 	{ vardas: "Andrej", amzius: 30, kelintasAtbego: 1 },
 ];
 const prizinesVietos = [];
+
 for (let index = 0; index < begikai.length; index++) {
 	const dabartinisBegikas = begikai[index];
-	if (dabartinisBegikas.kelintasAtbego <= 25) {
+	if (dabartinisBegikas.kelintasAtbego <= 3) {
 		prizinesVietos.push(dabartinisBegikas);
 	}
 }
@@ -58,7 +59,7 @@ for (const skaicius of skaiciai) {
 }
 
 for (const index in skaiciai) {
-	console.log(index);
+	console.log(skaiciai[index]);
 }
 
 const andrius = {
@@ -79,7 +80,7 @@ const andrius = {
 };
 
 for (const zmogausProperty of Object.entries(andrius)) {
-	const propertyPavadinimas = zmogausProperty[0];
-	const propertyReiksme = zmogausProperty[1];
-	console.log(`${propertyPavadinimas} = ${propertyReiksme}`);
+	const propertyPavadinimas = zmogausProperty[0]; //"vardas"
+	const propertyReiksme = zmogausProperty[1]; //"Reiksme"
+	console.log(`${propertyPavadinimas} = ${propertyReiksme}`); //Savybe=Reiksme
 }
