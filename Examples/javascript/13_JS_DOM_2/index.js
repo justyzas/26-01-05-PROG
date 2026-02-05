@@ -40,6 +40,9 @@ unorderedList.appendChild(li2);
 
 // Galima ieškoti Node'ų per kurį nors kitą Node.
 const h3 = tasksDiv.querySelector("h3");
+// Galimybė pasiekti elemento tėvinį elementą
+// const h3Parent = h3.parentNode;
+
 // Įterpia elementą prieš orientyrą (kitą elementą)
 tasksDiv.insertBefore(unorderedList, h3);
 

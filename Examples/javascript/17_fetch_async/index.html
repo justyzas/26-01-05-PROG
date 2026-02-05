@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			* {
+				font-family: "Verdana";
+				box-sizing: border-box;
+			}
+			.task.completed {
+				color: green;
+			}
+			.task {
+				color: red;
+			}
+			.card {
+				max-width: 500px;
+				padding: 1rem;
+				margin: 0 auto;
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+				border-radius: 8px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.img-container #cocktail-img {
+				width: 100%;
+			}
+
+			.card #cocktail-title {
+				text-align: center;
+			}
+			ul#ingredients {
+				font-style: italic;
+			}
+			.ingredient {
+				font-weight: bold;
+			}
+
+			#recipe {
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <ul id="tasks"></ul> -->
+		<!-- <script
+			src="simple-example.js"
+			type="module"
+		></script> -->
+
+		<div class="card">
+			<div class="img-container">
+				<img
+					src=""
+					id="cocktail-img"
+				/>
+			</div>
+			<div class="details">
+				<h3 id="cocktail-title">Chocolate Black Russian</h3>
+				<hr />
+				<h4>Ingredients</h4>
+				<ul id="ingredients"></ul>
+				<hr />
+				<h4>Recipe</h4>
+				<p id="recipe">
+					Combine all ingredients in an electric blender and blend at a low
+					speed for a short length of time. Pour into a chilled champagne flute
+					and serve.,
+				</p>
+			</div>
+		</div>
+		<script
+			src="cocktails.js"
+			type="module"
+		></script>
+		<script
+			src="cocktails-api.js"
+			type="module"
+		></script>
+	</body>
+</html>

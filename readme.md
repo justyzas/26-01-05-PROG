@@ -162,7 +162,18 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 ## Paskaita 14 _(2026-02-04)_
 
 - Praeitos paskaitos pakartojimas aptarimas/Klausimai;
-- Duomenų saugojimas naršyklėje;
+- Duomenų saugojimas naršyklėje (localStorage);
 - Dinaminis duomenų atvaizdavimas;
 - DOM pakartojimas + DOM medžio apžvalga;
 - Event Listeners/įvykių apdorojimas;
+
+## Paskaita 15 _(2026-02-05)_
+
+- Praeitos paskaitos pakartojimas aptarimas/Klausimai;
+- Objektų/Masyvų destruktūravimas
+- Moduliai (import/export);
+- Asinchroninės funkcijos + Kreipimasis į serverį
+
+## Paskait 16 _(2026-02-09)_
+
+- Objektinio programavimo pagrindai;

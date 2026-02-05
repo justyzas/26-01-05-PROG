@@ -40,7 +40,6 @@ passwordInput.addEventListener("blur", () => {
 });
 
 // Pelės užvedimo ant elemento įvykis
-
 showPasswordBtn.addEventListener("mouseover", (e) => {
 	// Įvykio aprašymas/objektas
 	console.log(e);

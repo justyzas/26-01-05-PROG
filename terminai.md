@@ -1,3 +1,6 @@
+- **API** -
+  (Application Programming Interface) Aplikacijų programavimo sąsaja, kurios pagalba pasiekiame tam tikras programos funkcijas/resursus
+
 - **Boilerplate** –  
   Paruoštas pradinis projekto šablonas arba kodas, kuris naudojamas kaip atspirties taškas kuriant naują projektą. Jame dažniausiai būna pagrindinė failų struktūra ir minimalus, bet veikiantis kodas, kad nereikėtų visko pradėti nuo nulio.
 

@@ -40,7 +40,7 @@ console.log(andriausReiksmes);
 const entries = Object.entries(andrius); // [["vardas", "Andrius"], ["pavarde", "Pakutinskas"], ["gimimoData", "1990-12-08"]....]
 console.log(entries);
 
-// Objekto destruktūravimas
+// Objekto išplėtimas kitame objekte (spread sintaksė)
 
 const objA = {
 	a: 7,
@@ -49,7 +49,7 @@ const objA = {
 };
 
 const b = {
-	// ... reiškia destruktūravimą
+	// ... reiškia spread
 	...objA,
 	d: true,
 };
