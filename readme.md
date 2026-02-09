@@ -174,6 +174,10 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Moduliai (import/export);
 - Asinchroninės funkcijos + Kreipimasis į serverį
 
-## Paskait 16 _(2026-02-09)_
+## Paskaita 16 _(2026-02-09)_
 
-- Objektinio programavimo pagrindai;
+- Praeitos paskaitos pakartojimas, aptarimas/klausimai;
+- Problematika, dirbant be objektinio programavimo;
+- Kaip objektinis programavimas sprendžia šias problemas;
+- Į objektus orientuoto programavimo teorija;
+- Užduočių sprendimas komandiškai;
