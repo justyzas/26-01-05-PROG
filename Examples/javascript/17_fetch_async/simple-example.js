@@ -7,7 +7,8 @@ const ul = document.querySelector("#tasks");
 // Kreipimąsis į bet kokį serverį užtrunka laiko
 
 // Užklausa į serverį gali būti: Pavykusi/Nepavykusi
-// const responseResult = [];
+const responseResult = [];
+
 // fetch(url)
 // 	.then((response) => {
 // 		console.log("response:", response);
@@ -19,7 +20,7 @@ const ul = document.querySelector("#tasks");
 // 	})
 // 	.catch((err) => console.log(err)); //0.03s
 
-// console.log(responseResult);
+console.log(responseResult);
 
 // Asinchroninės funkcijos yra funkcijos, kurios užtrunka laiko
 async function getDataFromServer() {

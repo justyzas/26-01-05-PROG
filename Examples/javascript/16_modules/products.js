@@ -1,5 +1,8 @@
 // Eksportuojamas kintamasis
-export const products = [];
+export const products = [
+	{ name: "jogurtas", price: 2.8 },
+	{ name: "braškės", price: 3 },
+];
 export const productSettings = {
 	naudojamaValiuta: "€",
 	lang: "LT",
