@@ -1,10 +1,14 @@
 // Jei norima tik paleisti modulio skript'ą
 // import "./products.js";
 // Jei norima importuoti kintamuosius:
-import { productSettings as ps, sum, products } from "./products.js";
+import x, { products } from "./products.js";
 
 // Pagrindinės reikšmės importavimas
 import produktuSkaicius from "./products.js";
+
+// Visko iš modulio importavimas
+// import * as modulis from "./products.js";
+
 // Sukombinuoti prieš tai naudoti importavimai
 // import produktuSkaicius, { productSettings, products } from "./products.js";
 

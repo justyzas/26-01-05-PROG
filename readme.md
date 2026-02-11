@@ -181,3 +181,11 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Kaip objektinis programavimas sprendžia šias problemas;
 - Į objektus orientuoto programavimo teorija;
 - Užduočių sprendimas komandiškai;
+
+## Paskaita 17 _(2026-02-11)_
+
+- Įvadas į serverius - NodeJS;
+- NodeJS dokumentacijos [Oficialus Node Šaltinis](https://nodejs.org/docs/latest/api/v8.html) [W3Schools](https://www.w3schools.com/nodejs/default.asp)
+- Paketų instaliavimas ir tvarkymas - npm;
+- Modulių priminimas;
+- Turinio pateikimas/API kūrimas naudojant express;
