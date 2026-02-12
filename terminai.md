@@ -54,4 +54,6 @@
 
 - **Script** - Scenarijus arba programa, atliekanti iš anksto numatytus veiksmus pagal iš anksto nustatytą tvarką.
 
+- **Timestamp** - laiko žyma. Dažnu atveju apibrėžiama kaip skaičius sekundžių arba milisekundžių praėjęs nuo 1970m sausio 1 d. 00:00 pagal UTC+0
+
 - **WWW (World Wide Web)** – tai pasaulinė informacinė sistema, veikianti internete ir pagrįsta hiperteksto dokumentais, kurie tarpusavyje susieti nuorodomis.

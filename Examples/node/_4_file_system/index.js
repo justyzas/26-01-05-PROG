@@ -5,7 +5,8 @@ import path from "path";
 
 // ============================================================
 // Node.js File System (fs) Tutorial — Sync & Async
-// ============================================================
+// ===========================================================
+// Current Working directory
 const CWD = process.cwd();
 const FILE = path.join(CWD, "demo.txt");
 const COPY = path.join(CWD, "copy.txt");
