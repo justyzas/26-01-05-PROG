@@ -189,3 +189,10 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Paketų instaliavimas ir tvarkymas - npm;
 - Modulių priminimas;
 - Turinio pateikimas/API kūrimas naudojant express;
+
+## Paskaita 18 _(2026-02-12)_
+
+- Debugginimas (klaidų ieškojimas ir taisymas)
+- API per failus failų sistemoje
+- SQL pristatymas
+- SQL naudojimas per NodeJS
