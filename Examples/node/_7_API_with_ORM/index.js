@@ -1,14 +1,16 @@
 import express from "express";
 import db from "./db.js";
 import { CocktailCreationSchema, CocktailUpdateSchema } from "./validations.js";
-import { success } from "zod";
+import { Cocktail } from "./models.js";
+import { where } from "sequelize";
 const app = express();
 const port = 3001;
 
 app.use(express.json());
 
 app.get("/all-cocktails", async (req, res) => {
-	const cocktails = await db`SELECT * FROM public.cocktails ORDER BY name`;
+	// const cocktails = await db`SELECT * FROM public.cocktails ORDER BY name`;
+	const cocktails = await Cocktail.findAll();
 	res.send(cocktails);
 });
 
@@ -22,9 +24,14 @@ app.get("/cocktail/:id", async (req, res) => {
 		return;
 	}
 
-	const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
+	// const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
 
-	if (cocktails.length < 1) {
+	const cocktail = await Cocktail.findOne({
+		where: {
+			id,
+		},
+	});
+	if (!cocktail) {
 		res.status(404).send({
 			message: `Cocktail with given ID = ${id} was not found`,
 			success: false,
@@ -32,8 +39,6 @@ app.get("/cocktail/:id", async (req, res) => {
 		});
 		return;
 	}
-
-	const cocktail = cocktails[0];
 
 	res.send({
 		message: `Cocktail was found successfuly`,
@@ -48,10 +53,11 @@ app.post("/add-cocktail", async (req, res) => {
 		console.log(body);
 		const validatedCocktail = CocktailCreationSchema.parse(body); // ERROR
 
-		const result = await db`INSERT INTO public.cocktails (name, recipe, glass)
-		VALUES (${validatedCocktail.name}, ${validatedCocktail.recipe}, ${validatedCocktail.glass})`;
+		const newCocktail = await Cocktail.create(validatedCocktail);
+		// const result = await db`INSERT INTO public.cocktails (name, recipe, glass)
+		// VALUES (${validatedCocktail.name}, ${validatedCocktail.recipe}, ${validatedCocktail.glass})`;
 
-		res.send(result);
+		res.send(newCocktail);
 	} catch (err) {
 		if (err.name === "ZodError") {
 			res.status(400).send({
@@ -73,19 +79,21 @@ app.delete("/cocktails/delete/:id", async (req, res) => {
 		});
 		return;
 	}
-	const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
+	// const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
+	// const cocktailsCount = await Cocktail.count({ where: { id } });
 
-	if (cocktails.length === 0) {
+	// console.log(id);
+	// await db`DELETE FROM public.cocktails WHERE id = ${id}`;
+	const deletedCount = await Cocktail.destroy({ where: { id } });
+	console.log(deletedCount);
+	if (deletedCount === 0) {
 		res.status(404).send({
 			message: `Pagal gautą ID = ${id}, nerastą, ką ištrinti`,
 			success: false,
 		});
 		return;
 	}
-	console.log(id);
-	await db`DELETE FROM public.cocktails WHERE id = ${id}`;
-
-	res.status(204);
+	res.status(204).send();
 });
 
 app.put("/cocktails/update/:id", async (req, res) => {
@@ -112,9 +120,12 @@ app.put("/cocktails/update/:id", async (req, res) => {
 			return;
 		}
 
-		const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
+		// const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
+		const [affectedCount] = await Cocktail.update(updateData, {
+			where: { id },
+		});
 
-		if (cocktails.length === 0) {
+		if (affectedCount === 0) {
 			res.status(404).send({
 				message: `Kokteilis su ID = ${id} nerastas`,
 				success: false,
@@ -123,16 +134,9 @@ app.put("/cocktails/update/:id", async (req, res) => {
 			return;
 		}
 
-		const updated = await db`
-			UPDATE public.cocktails
-			SET ${db(updateData, ...Object.keys(updateData))}
-			WHERE id = ${id}
-			RETURNING *`;
-
 		res.send({
 			message: "Kokteilis sėkmingai atnaujintas",
 			success: true,
-			data: updated[0],
 		});
 	} catch (err) {
 		if (err.name === "ZodError") {

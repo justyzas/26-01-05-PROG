@@ -196,3 +196,20 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - API per failus failų sistemoje
 - SQL pristatymas
 - SQL naudojimas per NodeJS
+
+## Paskaita 19 _(2026-02-18)_
+
+- SQL per NodeJS pakartojimas;
+- CRUD -
+  - Create (HTTP POST)
+  - Read (HTTP GET)
+  - Update (HTTP PUT)
+  - Delete (HTTP Delete);
+- Kitos HTTP operacijos;
+- ORM (Sequelize);
+
+---
+
+- Autentifikacija - kas tai?
+- Autorizacija - kas tai?
+- Autentifikacijos/Autorizacijos pritaikymas per express;
