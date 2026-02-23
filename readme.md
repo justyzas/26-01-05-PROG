@@ -208,8 +208,23 @@ _Dabar repozitorija jau susieta, belieka sinchronizuoti. Per pirmus 4 žingsnius
 - Kitos HTTP operacijos;
 - ORM (Sequelize);
 
----
+## Paskaita 20 _(2026-02-18)_
 
 - Autentifikacija - kas tai?
 - Autorizacija - kas tai?
 - Autentifikacijos/Autorizacijos pritaikymas per express;
+- Įvadas į React biblioteką
+- React projekto struktūra
+- Komponentai
+
+## Paskaita 21 _(2026-02-23)_
+
+- Praeitos paskaitos aptarimas/pakartojimas/klausimai
+- React sintaksė
+- Komponentų kūrimas
+- Komponentų parametrizavimas per props
+- Sąlyginis turinio atvaizdavimas
+- useState hook;
+- useEffect hook;
+- formos duomenų apdorojimas;
+- API iššaukinėjimas;

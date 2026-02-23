@@ -2,7 +2,8 @@ import express from "express";
 import db from "./db.js";
 import { CocktailCreationSchema, CocktailUpdateSchema } from "./validations.js";
 import { Cocktail } from "./models.js";
-import { where } from "sequelize";
+import { Op, where } from "sequelize";
+import { success } from "zod";
 const app = express();
 const port = 3001;
 
@@ -12,6 +13,29 @@ app.get("/all-cocktails", async (req, res) => {
 	// const cocktails = await db`SELECT * FROM public.cocktails ORDER BY name`;
 	const cocktails = await Cocktail.findAll();
 	res.send(cocktails);
+});
+
+app.get("/cocktail/search", async (req, res) => {
+	const searchPhrase = req.query.phrase;
+	if (!searchPhrase) {
+		res.status(400).send({
+			message: `Searh phrase is a mandatory query parameter. Got ${searchPhrase}`,
+			success: false,
+		});
+		return;
+	}
+
+	const matchedCocktails = await Cocktail.findAll({
+		where: {
+			[Op.or]: {
+				name: `%${searchPhrase.toLowerCase()}%`,
+				recipe: `%${searchPhrase.toLowerCase()}%`,
+				glass: `%${searchPhrase.toLowerCase()}%`,
+			},
+		},
+	});
+
+	res.send({ data: matchedCocktails, message: "success", success: true });
 });
 
 app.get("/cocktail/:id", async (req, res) => {
@@ -26,11 +50,17 @@ app.get("/cocktail/:id", async (req, res) => {
 
 	// const cocktails = await db`SELECT * FROM public.cocktails WHERE id = ${id}`;
 
-	const cocktail = await Cocktail.findOne({
-		where: {
-			id,
-		},
-	});
+	// const cocktail = await Cocktail.findOne({
+	// 	where: {
+	// 		id,
+	// 	},
+	// });
+	const cocktail = await Cocktail.findByPk(id);
+	// {
+	// 	name: "",
+	// 	recipe: "",
+	// 	glass: ""
+	// } || null
 	if (!cocktail) {
 		res.status(404).send({
 			message: `Cocktail with given ID = ${id} was not found`,
@@ -133,7 +163,6 @@ app.put("/cocktails/update/:id", async (req, res) => {
 			});
 			return;
 		}
-
 		res.send({
 			message: "Kokteilis sėkmingai atnaujintas",
 			success: true,
