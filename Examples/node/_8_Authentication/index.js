@@ -27,7 +27,7 @@ app.use(
 	session({
 		secret: "keyboard cat",
 		resave: false, //Padaro, kad sesija nebūtų perkuriama kiekvienos užklausos metu
-		saveUninitialized: true, //
+		saveUninitialized: true, // Jei sesija dar nebuvo sukurta, ji būna sukuriama po pirmosios užklausos
 		cookie: {
 			httpOnly: true, // Jei svetainė turi HTTPS - nustatyti į false
 			secure: false,
@@ -40,7 +40,6 @@ app.use(
 app.get("/visits", (req, res) => {
 	if (!req.session.visits) {
 		req.session.visits = 0;
-		req.session.role = "user";
 	}
 	console.log(req.session);
 	req.session.visits++; // Apsilankymu skaicius padideja
@@ -117,13 +116,13 @@ app.get("/get-secret", (req, res) => {
 		return;
 	}
 	if (!req.session.role) {
-		res.send({
+		res.status(403).send({
 			message: "You have to log in to access this resource",
 			success: false,
 		});
 		return;
 	}
-	res.send({
+	res.status(403).send({
 		message: "You do not have access to this resource",
 		success: false,
 	});
